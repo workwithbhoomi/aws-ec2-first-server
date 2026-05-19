@@ -172,6 +172,20 @@ Successfully:
 * Managed Linux environment remotely
 * Installed and hosted nginx web server
 
+### Issue Faced
+
+Website was unreachable despite nginx running successfully.
+
+### Root Cause
+
+Browser was attempting HTTPS connection while nginx was configured only for HTTP.
+
+### Resolution
+
+Accessed the application using:
+http://<public-ip>
+instead of https://
+
 ---
 
 # Skills Practiced
@@ -204,3 +218,4 @@ Successfully:
 * SSH Connection from WSL
 * nginx Running in Browser
 * Linux Commands Execution
+
